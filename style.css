@@ -7,6 +7,10 @@
   --text-color: #c9c9c9;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
