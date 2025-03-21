@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button
+      id="open-sidebar-button"
+      aria-label="open sidebar"
+      aria-expanded="flase"
+      aria-controls="navbar"
+      onclick="openSidebar()"
+    >
+      <img src="menu.svg" alt="Hamburger Menu" />
+    </button>
+    <nav id="navbar">
+      <ul>
+        <li>
+          <button
+            id="close-sidebar-button"
+            onclick="closeSidebar()"
+            aria-label="close sidebar"
+          >
+            <img src="close.svg" alt="sidebar close" />
+          </button>
+        </li>
+        <li class="home-li">
+          <a href="index.html" aria-current="page">Home</a>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html" class="active-link">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="login.html" class="accent-link">Login</a></li>
+      </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+    <main>
+      <h1>Accesible Navbar | Features</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eos
+        maxime reiciendis optio amet distinctio minus veritatis nemo expedita!
+        Modi quisquam doloribus excepturi aspernatur ab adipisci, impedit non
+        nesciunt optio.
+      </p>
+    </main>
+  </body>
+</html>
